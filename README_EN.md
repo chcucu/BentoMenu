@@ -260,4 +260,4 @@ Artifacts:
 
 MIT, see [LICENSE](LICENSE).
 
-Downloads are on the repository's Releases page.
+Downloads are on the [Releases](https://github.com/chcucu/BentoMenu/releases) page.

@@ -260,4 +260,4 @@ mvn clean package
 
 MIT，见 [LICENSE](LICENSE)。
 
-下载见仓库的 Releases 页面。
+下载见 [Releases](https://github.com/chcucu/BentoMenu/releases)。
