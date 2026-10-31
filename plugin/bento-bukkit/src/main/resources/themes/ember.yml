@@ -1,0 +1,55 @@
+id: ember
+display-name: "<gradient:primary:secondary>余烬 Ember</gradient>"
+description: "<muted>炭黑与琥珀色的温暖火光</muted>"
+colors:
+  primary: "#FFB86B"
+  secondary: "#FF6B6B"
+  accent: "#FFD166"
+  text: "#FFF3E6"
+  muted: "#C9A99A"
+  success: "#8AE68A"
+  warning: "#FFC857"
+  error: "#FF5A5A"
+  background-start: "#1A0E0B"
+  background-end: "#3A1B16"
+  border-start: "#4A241C"
+  border-end: "#8A3B2A"
+title:
+  gradient: [primary, secondary]
+border:
+  style: gradient
+  material: GRAY_STAINED_GLASS_PANE
+  resource-pack-material: LEATHER_HORSE_ARMOR
+  resource-pack-model-data: 9001
+  custom-model-data: 9001
+icons:
+  search:
+    material: COMPASS
+    custom-model-data: 9101
+  previous:
+    material: ARROW
+    custom-model-data: 9102
+  next:
+    material: ARROW
+    custom-model-data: 9103
+  page:
+    material: PAPER
+    custom-model-data: 9104
+  category:
+    material: NAME_TAG
+    custom-model-data: 9105
+  close:
+    material: BARRIER
+    custom-model-data: 9106
+  loading:
+    material: CLOCK
+    custom-model-data: 9107
+  error:
+    material: BARRIER
+    custom-model-data: 9108
+sounds:
+  open: block.chest.open
+  click: ui.button.click
+  page: item.book.page_turn
+  error: entity.villager.no
+  success: entity.player.levelup

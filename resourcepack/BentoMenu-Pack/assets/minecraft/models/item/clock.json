@@ -1,0 +1,11 @@
+{
+  "parent": "item/clock",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 9107
+      },
+      "model": "item/bento_loading"
+    }
+  ]
+}

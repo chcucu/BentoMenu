@@ -1,0 +1,11 @@
+{
+  "parent": "item/paper",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 9104
+      },
+      "model": "item/bento_page"
+    }
+  ]
+}

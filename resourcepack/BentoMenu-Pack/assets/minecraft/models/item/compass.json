@@ -1,0 +1,11 @@
+{
+  "parent": "item/compass",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 9101
+      },
+      "model": "item/bento_search"
+    }
+  ]
+}

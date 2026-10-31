@@ -1,0 +1,62 @@
+name: BentoMenu
+version: ${project.version}
+main: dev.bento.menu.bukkit.BentoPlugin
+api-version: '1.18'
+load: POSTWORLD
+folia-supported: true
+depend: [Vault, PlaceholderAPI]
+authors: [BentoMenu]
+description: Universal, themeable container-menu framework for Spigot, Paper and Folia.
+website: local
+commands:
+  bento:
+    aliases: [bm]
+    description: Open and manage BentoMenu menus.
+    usage: /bento help
+    permission: bento.command.use
+permissions:
+  bento.command.use:
+    default: true
+    description: Use /bento.
+  bento.command.open:
+    default: true
+    description: Open menus you can access.
+  bento.command.open.other:
+    default: op
+    description: Open menus for other players.
+  bento.command.list:
+    default: true
+    description: List accessible menus.
+  bento.command.theme:
+    default: true
+    description: Choose a theme.
+  bento.command.language:
+    default: true
+    description: Choose a language.
+  bento.command.close:
+    default: true
+    description: Close your open menu.
+  bento.command.info:
+    default: true
+    description: Show plugin and integration status.
+  bento.command.reload:
+    default: op
+    description: Reload YAML configuration.
+  bento.command.validate:
+    default: op
+    description: Validate YAML configuration without applying it.
+  bento.command.stats:
+    default: op
+    description: Show runtime metrics.
+  bento.bypass.cooldown:
+    default: op
+    description: Bypass button cooldowns.
+  bento.admin:
+    default: op
+    description: Grants administrative BentoMenu permissions.
+    children:
+      bento.command.open.other: true
+      bento.command.reload: true
+      bento.command.validate: true
+      bento.command.stats: true
+      bento.bypass.cooldown: true

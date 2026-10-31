@@ -1,0 +1,67 @@
+id: profile
+title: "<gradient:primary:secondary>玩家信息</gradient> <muted>· Profile</muted>"
+layout: profile
+data:
+  source: yaml
+  search: false
+  categories: false
+  refresh: 2s
+items:
+  head:
+    slot: 11
+    material: PLAYER_HEAD
+    head: "{player}"
+    name: "<color:text>{player}</color>"
+    lore:
+      - "<muted>世界</muted> <color:text>{world}</color>"
+      - "<muted>主题</muted> <color:text>%bento_theme%</color>"
+      - "<muted>菜单</muted> <color:text>%bento_menu%</color>"
+  balance:
+    slot: 13
+    material: SUNFLOWER
+    name: "<color:accent>余额</color>"
+    lore:
+      - "<gradient:primary:secondary>{balance}</gradient>"
+      - "<muted>Vault 经济</muted>"
+  level:
+    slot: 15
+    material: EXPERIENCE_BOTTLE
+    name: "<color:success>等级</color>"
+    lore:
+      - "<muted>等级</muted> <color:text>{level}</color>"
+      - "<muted>生命</muted> <color:text>{health}</color>"
+  status:
+    slot: 21
+    material: HEART_OF_THE_SEA
+    name: "<color:primary>玩家状态</color>"
+    lore:
+      - "<muted>饱食度</muted> <color:text>{food}</color>"
+      - "<muted>延迟</muted> <color:text>{ping}ms</color>"
+      - "<muted>在线</muted> <color:text>{online}</color>"
+  back:
+    slot: 20
+    material: ARROW
+    name: "<color:text>← 返回主菜单</color>"
+    actions:
+      - type: open-menu
+        menu: main
+  shop:
+    slot: 22
+    material: EMERALD
+    name: "<color:success>前往商店</color>"
+    actions:
+      - type: open-menu
+        menu: shop
+  themes:
+    slot: 24
+    material: PAPER
+    name: "<color:secondary>切换主题</color>"
+    actions:
+      - type: open-menu
+        menu: themes
+  close:
+    slot: 31
+    material: BARRIER
+    name: "<color:error>关闭</color>"
+    actions:
+      - type: close-menu

@@ -1,0 +1,7 @@
+target/
+.tests-work/
+*.log
+.idea/
+*.iml
+.vscode/
+node_modules/

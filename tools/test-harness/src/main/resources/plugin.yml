@@ -1,0 +1,16 @@
+name: BentoTestHarness
+version: 1.0.0
+main: dev.bento.test.BentoTestPlugin
+api-version: '1.18'
+folia-supported: true
+depend: [Vault, PlaceholderAPI, BentoMenu]
+authors: [BentoMenu Tests]
+description: Test economy, TPS probe and load-trigger commands for BentoMenu.
+commands:
+  bentotest:
+    description: BentoMenu test harness commands.
+    usage: /bentotest <openall|closeall|balance|giveall|tps|status>
+    permission: bentotest.admin
+permissions:
+  bentotest.admin:
+    default: op

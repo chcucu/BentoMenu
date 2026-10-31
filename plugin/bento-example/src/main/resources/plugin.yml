@@ -1,0 +1,7 @@
+name: BentoMenuExample
+version: ${project.version}
+main: dev.bento.example.BentoExamplePlugin
+api-version: '1.18'
+depend: [BentoMenu]
+authors: [BentoMenu]
+description: Reference addon for the BentoMenu v1 API.

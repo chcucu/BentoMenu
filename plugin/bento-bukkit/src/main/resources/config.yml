@@ -1,0 +1,55 @@
+# BentoMenu · universal container-menu framework
+# Documentation: docs/USER_GUIDE.md (in the project distribution)
+#
+# All player-visible text lives in messages/<language>.yml.
+# Text syntax: & colours, &#RRGGBB, <gradient:#a:#b>, <color:primary>,
+# <bold>, <italic>, <underlined>, <strikethrough>, <obfuscated>, <br>.
+# Internal placeholders: {player}, {balance}, {level}, {world}, {ping},
+# {page}, {pages}, {category}, {query}, {theme}, {menu}, {entry}, {price}.
+
+language:
+  # Bundled: zh_CN, en_US. Administrators can add more files in messages/.
+  default: zh_CN
+  allow-player-switch: true
+
+theme:
+  default: aurora
+
+menu:
+  # Opened by /bento with no arguments.
+  default: main
+
+ui:
+  # Set to true only after you host the optional example resource pack.
+  # Without it, the plugin falls back to vanilla stained glass.
+  resource-pack: false
+  click-debounce-ms: 120
+  click-sound: true
+  open-sound: true
+
+performance:
+  data-threads: 2
+  search-threads: 1
+  # PAPI values are cached; rendering never blocks on an expansion.
+  placeholder-cache-ttl: 3s
+  metrics: true
+
+economy:
+  # Used only when Vault has no economy provider or its format call fails.
+  format: "$%.2f"
+
+search:
+  # auto: anvil input, chat fallback; anvil; chat.
+  input: auto
+  max-length: 32
+
+actions:
+  # stop: abort the remaining action chain after an error.
+  # continue: keep running following actions.
+  on-error: stop
+
+auto-reload:
+  enabled: false
+  debounce: 2s
+
+debug: false

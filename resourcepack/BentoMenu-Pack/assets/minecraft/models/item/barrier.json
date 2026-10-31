@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "item/barrier"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 9106
+      },
+      "model": "item/bento_close"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 9108
+      },
+      "model": "item/bento_error"
+    }
+  ]
+}

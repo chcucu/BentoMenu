@@ -1,0 +1,14 @@
+rows: 5
+pattern:
+  - '#########'
+  - '#CCCCCCC#'
+  - '#CCCCCCC#'
+  - '#CCCCCCC#'
+  - '#<#P#>#X#'
+regions:
+  '#': border
+  'C': content
+  '<': previous
+  'P': page
+  '>': next
+  'X': close

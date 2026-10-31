@@ -1,0 +1,55 @@
+id: sakura
+display-name: "<gradient:primary:secondary>樱花 Sakura</gradient>"
+description: "<muted>樱粉与暮紫的柔和渐变</muted>"
+colors:
+  primary: "#FFB7D5"
+  secondary: "#C69EFF"
+  accent: "#FFE29A"
+  text: "#FFF0F6"
+  muted: "#C9A6B8"
+  success: "#8AE6C1"
+  warning: "#FFD166"
+  error: "#FF6B8A"
+  background-start: "#1A0F18"
+  background-end: "#3A1C2E"
+  border-start: "#4A2438"
+  border-end: "#8A3B64"
+title:
+  gradient: [primary, secondary]
+border:
+  style: gradient
+  material: PINK_STAINED_GLASS_PANE
+  resource-pack-material: LEATHER_HORSE_ARMOR
+  resource-pack-model-data: 9001
+  custom-model-data: 9001
+icons:
+  search:
+    material: COMPASS
+    custom-model-data: 9101
+  previous:
+    material: ARROW
+    custom-model-data: 9102
+  next:
+    material: ARROW
+    custom-model-data: 9103
+  page:
+    material: PAPER
+    custom-model-data: 9104
+  category:
+    material: NAME_TAG
+    custom-model-data: 9105
+  close:
+    material: BARRIER
+    custom-model-data: 9106
+  loading:
+    material: CLOCK
+    custom-model-data: 9107
+  error:
+    material: BARRIER
+    custom-model-data: 9108
+sounds:
+  open: block.chest.open
+  click: ui.button.click
+  page: item.book.page_turn
+  error: entity.villager.no
+  success: entity.player.levelup

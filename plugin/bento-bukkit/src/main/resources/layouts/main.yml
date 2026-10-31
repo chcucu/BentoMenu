@@ -1,0 +1,8 @@
+rows: 3
+pattern:
+  - '#########'
+  - '#.......#'
+  - '#########'
+regions:
+  '#': border
+  '.': background

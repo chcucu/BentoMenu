@@ -1,0 +1,56 @@
+id: aurora
+display-name: "<gradient:primary:secondary>极光 Aurora</gradient>"
+description: "<muted>深海蓝与极光紫的玻璃质感</muted>"
+colors:
+  primary: "#7AD7FF"
+  secondary: "#B39DFF"
+  accent: "#FFD166"
+  text: "#EAF2FF"
+  muted: "#8FA3BF"
+  success: "#5BE49B"
+  warning: "#FFC857"
+  error: "#FF6B6B"
+  background-start: "#0B1220"
+  background-end: "#1B2A4A"
+  border-start: "#2A3D66"
+  border-end: "#5B4B8A"
+title:
+  gradient: [primary, secondary]
+border:
+  style: gradient
+  material: GRAY_STAINED_GLASS_PANE
+  resource-pack-material: LEATHER_HORSE_ARMOR
+  resource-pack-model-data: 9001
+  # Optional fallback model data when a pack is used for glass icons.
+  custom-model-data: 9001
+icons:
+  search:
+    material: COMPASS
+    custom-model-data: 9101
+  previous:
+    material: ARROW
+    custom-model-data: 9102
+  next:
+    material: ARROW
+    custom-model-data: 9103
+  page:
+    material: PAPER
+    custom-model-data: 9104
+  category:
+    material: NAME_TAG
+    custom-model-data: 9105
+  close:
+    material: BARRIER
+    custom-model-data: 9106
+  loading:
+    material: CLOCK
+    custom-model-data: 9107
+  error:
+    material: BARRIER
+    custom-model-data: 9108
+sounds:
+  open: block.chest.open
+  click: ui.button.click
+  page: item.book.page_turn
+  error: entity.villager.no
+  success: entity.player.levelup

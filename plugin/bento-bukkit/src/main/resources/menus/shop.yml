@@ -1,0 +1,466 @@
+id: shop
+title: "<gradient:primary:secondary>商店</gradient> <muted>· Shop</muted>"
+layout: shop
+data:
+  source: yaml
+  search: true
+  refresh: 5s
+  sort: price_asc
+  categories:
+    enabled: true
+    order: [food, tools, fun, magic]
+    names:
+      all: 全部
+      food: 食物
+      tools: 工具
+      fun: 娱乐
+      magic: 魔法
+items:
+  balance:
+    slot: 4
+    material: SUNFLOWER
+    name: "<muted>余额</muted>"
+    lore:
+      - "<color:accent>{balance}</color>"
+      - "<muted>主题</muted> <color:text>%bento_theme%</color>"
+entries:
+  - id: apple
+    category: food
+    tags: [food, cheap, fruit]
+    material: APPLE
+    amount: 2
+    name: "<color:text>苹果</color>"
+    price: 6
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 6
+        item:
+          material: APPLE
+          amount: 2
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: bread
+    category: food
+    tags: [food, cheap]
+    material: BREAD
+    amount: 3
+    name: "<color:text>面包</color>"
+    price: 8
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 8
+        item:
+          material: BREAD
+          amount: 3
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: golden_carrot
+    category: food
+    tags: [food, premium]
+    material: GOLDEN_CARROT
+    amount: 2
+    name: "<color:text>金胡萝卜</color>"
+    price: 20
+    glow: true
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 20
+        item:
+          material: GOLDEN_CARROT
+          amount: 2
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: cookie
+    category: food
+    tags: [food, cheap, snack]
+    material: COOKIE
+    amount: 8
+    name: "<color:text>曲奇</color>"
+    price: 4
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 4
+        item:
+          material: COOKIE
+          amount: 8
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: honey_bottle
+    category: food
+    tags: [food, drink]
+    material: HONEY_BOTTLE
+    amount: 3
+    name: "<color:text>蜂蜜瓶</color>"
+    price: 12
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 12
+        item:
+          material: HONEY_BOTTLE
+          amount: 3
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: mushroom_stew
+    category: food
+    tags: [food, meal]
+    material: MUSHROOM_STEW
+    amount: 1
+    name: "<color:text>蘑菇煲</color>"
+    price: 15
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 15
+        item:
+          material: MUSHROOM_STEW
+          amount: 1
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: iron_pickaxe
+    category: tools
+    tags: [tools, mining]
+    material: IRON_PICKAXE
+    amount: 1
+    name: "<color:text>铁镐</color>"
+    price: 45
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 45
+        item:
+          material: IRON_PICKAXE
+          amount: 1
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: iron_axe
+    category: tools
+    tags: [tools, wood]
+    material: IRON_AXE
+    amount: 1
+    name: "<color:text>铁斧</color>"
+    price: 40
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 40
+        item:
+          material: IRON_AXE
+          amount: 1
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: diamond_shovel
+    category: tools
+    tags: [tools, premium]
+    material: DIAMOND_SHOVEL
+    amount: 1
+    name: "<color:text>钻石锹</color>"
+    price: 80
+    glow: true
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 80
+        item:
+          material: DIAMOND_SHOVEL
+          amount: 1
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: shears
+    category: tools
+    tags: [tools, cheap]
+    material: SHEARS
+    amount: 1
+    name: "<color:text>剪刀</color>"
+    price: 30
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 30
+        item:
+          material: SHEARS
+          amount: 1
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: fishing_rod
+    category: tools
+    tags: [tools, fishing]
+    material: FISHING_ROD
+    amount: 1
+    name: "<color:text>钓鱼竿</color>"
+    price: 25
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 25
+        item:
+          material: FISHING_ROD
+          amount: 1
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: torch
+    category: tools
+    tags: [tools, light, cheap]
+    material: TORCH
+    amount: 16
+    name: "<color:text>火把</color>"
+    price: 3
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 3
+        item:
+          material: TORCH
+          amount: 16
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: firework_rocket
+    category: fun
+    tags: [fun, celebration]
+    material: FIREWORK_ROCKET
+    amount: 8
+    name: "<color:text>烟花火箭</color>"
+    price: 18
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 18
+        item:
+          material: FIREWORK_ROCKET
+          amount: 8
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: note_block
+    category: fun
+    tags: [fun, music]
+    material: NOTE_BLOCK
+    amount: 1
+    name: "<color:text>音符盒</color>"
+    price: 22
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 22
+        item:
+          material: NOTE_BLOCK
+          amount: 1
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: jukebox
+    category: fun
+    tags: [fun, music, premium]
+    material: JUKEBOX
+    amount: 1
+    name: "<color:text>唱片机</color>"
+    price: 55
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 55
+        item:
+          material: JUKEBOX
+          amount: 1
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: slime_ball
+    category: fun
+    tags: [fun, sticky]
+    material: SLIME_BALL
+    amount: 6
+    name: "<color:text>黏液球</color>"
+    price: 10
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: ui.button.click
+    actions:
+      - type: buy
+        price: 10
+        item:
+          material: SLIME_BALL
+          amount: 6
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: ender_pearl
+    category: magic
+    tags: [magic, teleport]
+    material: ENDER_PEARL
+    amount: 3
+    name: "<color:text>末影珍珠</color>"
+    price: 35
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: entity.enderman.portal
+      title-frames:
+        - "<gradient:primary:secondary>✦</gradient>"
+        - "<gradient:secondary:primary>✧</gradient>"
+      subtitle: "<muted>魔力涌动</muted>"
+      frame-interval: 120ms
+    actions:
+      - type: buy
+        price: 35
+        item:
+          material: ENDER_PEARL
+          amount: 3
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"
+  - id: amethyst_shard
+    category: magic
+    tags: [magic, crystal]
+    material: AMETHYST_SHARD
+    amount: 4
+    name: "<color:text>紫水晶碎片</color>"
+    price: 28
+    glow: true
+    lore:
+      - "<muted>分类</muted> <color:primary>{category_name}</color>"
+      - "<muted>价格</muted> <color:accent>{price}</color>"
+      - "<muted>余额</muted> <color:text>{balance}</color>"
+      - "<muted>左键购买 · 冷却 1 秒</muted>"
+    click-types: [LEFT]
+    cooldown: 1s
+    feedback:
+      sound: block.amethyst_block.chime
+    actions:
+      - type: buy
+        price: 28
+        item:
+          material: AMETHYST_SHARD
+          amount: 4
+        success-message: "<color:success>购买成功</color> <muted>·</muted> <color:text>{item} ×{amount}</color> <muted>(-{price})</muted>"
+        failure-message: "<color:error>购买失败</color> <muted>·</muted> <color:text>{price}</color> <muted>余额不足或背包已满</muted>"

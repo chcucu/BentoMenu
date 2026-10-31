@@ -1,0 +1,110 @@
+id: themes
+title: "<gradient:primary:secondary>主题</gradient> <muted>· Themes</muted>"
+layout: themes
+data:
+  source: yaml
+  search: false
+  categories: false
+  page-size: 21
+  refresh: 10s
+items:
+  current:
+    slot: 4
+    material: BOOK
+    name: "<color:text>当前主题</color>"
+    lore:
+      - "<gradient:primary:secondary>%bento_theme%</gradient>"
+      - "<muted>左键应用 · 右键预览</muted>"
+entries:
+  - id: aurora
+    material: AMETHYST_SHARD
+    metadata:
+      theme_id: aurora
+      theme_name: "极光 Aurora"
+      description: "深海蓝与极光紫"
+    name: "<color:text>{theme_name}</color>"
+    lore:
+      - "<muted>{description}</muted>"
+      - "<muted>左键应用 · 右键预览</muted>"
+      - "<muted>ID</muted> <color:text>{theme_id}</color>"
+    actions:
+      - type: theme
+        theme: "{theme_id}"
+        mode: preview
+        preview-menu: theme-preview
+        click-types: [RIGHT, SHIFT_RIGHT]
+      - type: theme
+        theme: "{theme_id}"
+        mode: apply
+        click-types: [LEFT, SHIFT_LEFT]
+    feedback:
+      sound: ui.button.click
+  - id: ember
+    material: BLAZE_POWDER
+    metadata:
+      theme_id: ember
+      theme_name: "余烬 Ember"
+      description: "炭黑与琥珀火光"
+    name: "<color:text>{theme_name}</color>"
+    lore:
+      - "<muted>{description}</muted>"
+      - "<muted>左键应用 · 右键预览</muted>"
+      - "<muted>ID</muted> <color:text>{theme_id}</color>"
+    actions:
+      - type: theme
+        theme: "{theme_id}"
+        mode: preview
+        preview-menu: theme-preview
+        click-types: [RIGHT, SHIFT_RIGHT]
+      - type: theme
+        theme: "{theme_id}"
+        mode: apply
+        click-types: [LEFT, SHIFT_LEFT]
+    feedback:
+      sound: ui.button.click
+  - id: mono
+    material: WHITE_DYE
+    metadata:
+      theme_id: mono
+      theme_name: "黑白 Mono"
+      description: "极简黑白"
+    name: "<color:text>{theme_name}</color>"
+    lore:
+      - "<muted>{description}</muted>"
+      - "<muted>左键应用 · 右键预览</muted>"
+      - "<muted>ID</muted> <color:text>{theme_id}</color>"
+    actions:
+      - type: theme
+        theme: "{theme_id}"
+        mode: preview
+        preview-menu: theme-preview
+        click-types: [RIGHT, SHIFT_RIGHT]
+      - type: theme
+        theme: "{theme_id}"
+        mode: apply
+        click-types: [LEFT, SHIFT_LEFT]
+    feedback:
+      sound: ui.button.click
+  - id: sakura
+    material: PINK_DYE
+    metadata:
+      theme_id: sakura
+      theme_name: "樱花 Sakura"
+      description: "樱粉与暮紫"
+    name: "<color:text>{theme_name}</color>"
+    lore:
+      - "<muted>{description}</muted>"
+      - "<muted>左键应用 · 右键预览</muted>"
+      - "<muted>ID</muted> <color:text>{theme_id}</color>"
+    actions:
+      - type: theme
+        theme: "{theme_id}"
+        mode: preview
+        preview-menu: theme-preview
+        click-types: [RIGHT, SHIFT_RIGHT]
+      - type: theme
+        theme: "{theme_id}"
+        mode: apply
+        click-types: [LEFT, SHIFT_LEFT]
+    feedback:
+      sound: ui.button.click

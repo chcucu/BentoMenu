@@ -1,0 +1,45 @@
+id: theme-preview
+title: "<gradient:primary:secondary>主题预览</gradient> <muted>· Preview</muted>"
+layout: theme-preview
+data:
+  search: false
+  categories: false
+items:
+  apply:
+    slot: 11
+    material: LIME_DYE
+    name: "<color:success>应用此主题</color>"
+    lore:
+      - "<muted>保存为你的默认主题</muted>"
+      - "<muted>当前预览会保留到返回</muted>"
+    actions:
+      - type: theme
+        theme: "{theme}"
+        mode: apply
+        click-types: [LEFT, SHIFT_LEFT]
+    feedback:
+      sound: entity.player.levelup
+      title-frames:
+        - "<color:success>✔</color>"
+        - "<color:success>✦</color>"
+      subtitle: "<muted>主题已应用</muted>"
+  info:
+    slot: 13
+    material: PAPER
+    name: "<color:text>预览</color>"
+    lore:
+      - "<muted>此界面完全使用所选主题渲染</muted>"
+      - "<muted>边框 · 标题 · 图标 · 声音</muted>"
+  back:
+    slot: 15
+    material: ARROW
+    name: "<color:text>← 返回主题页</color>"
+    actions:
+      - type: open-menu
+        menu: themes
+  close:
+    slot: 22
+    material: BARRIER
+    name: "<color:error>关闭</color>"
+    actions:
+      - type: close-menu

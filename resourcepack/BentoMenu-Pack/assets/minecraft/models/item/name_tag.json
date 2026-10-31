@@ -1,0 +1,11 @@
+{
+  "parent": "item/name_tag",
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 9105
+      },
+      "model": "item/bento_category"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+id: main
+title: "<gradient:primary:secondary>BentoMenu</gradient> <muted>主菜单</muted>"
+layout: main
+data:
+  search: false
+  categories: false
+items:
+  shop:
+    slot: 11
+    material: EMERALD
+    name: "<gradient:primary:secondary>商店</gradient>"
+    lore:
+      - "<muted>浏览分类商品</muted>"
+      - "<muted>搜索 · 分页 · 购买</muted>"
+    actions:
+      - type: open-menu
+        menu: shop
+    feedback:
+      sound: ui.button.click
+      title-frames:
+        - "<gradient:primary:secondary>商店</gradient>"
+        - "<gradient:secondary:primary>商店</gradient>"
+      subtitle: "<muted>正在打开</muted>"
+      frame-interval: 120ms
+  profile:
+    slot: 13
+    material: PLAYER_HEAD
+    head: "{player}"
+    name: "<color:text>{player}</color>"
+    lore:
+      - "<muted>余额 · 等级 · 状态</muted>"
+      - "<muted>占位符集成演示</muted>"
+    actions:
+      - type: open-menu
+        menu: profile
+    feedback:
+      sound: ui.button.click
+  themes:
+    slot: 15
+    material: PAPER
+    name: "<gradient:secondary:accent>主题</gradient>"
+    lore:
+      - "<muted>多主题预览与切换</muted>"
+      - "<muted>当前主题</muted> <color:text>%bento_theme%</color>"
+    actions:
+      - type: open-menu
+        menu: themes
+    feedback:
+      sound: ui.button.click
+  close:
+    slot: 22
+    material: BARRIER
+    name: "<color:error>关闭</color>"
+    lore:
+      - "<muted>点击关闭菜单</muted>"
+    actions:
+      - type: close-menu

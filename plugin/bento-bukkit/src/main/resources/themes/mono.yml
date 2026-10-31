@@ -1,0 +1,55 @@
+id: mono
+display-name: "<gradient:primary:secondary>黑白 Mono</gradient>"
+description: "<muted>极简黑白，清晰克制</muted>"
+colors:
+  primary: "#FFFFFF"
+  secondary: "#BFC6D1"
+  accent: "#E6E6E6"
+  text: "#F5F5F5"
+  muted: "#9AA0A6"
+  success: "#E8E8E8"
+  warning: "#D6D6D6"
+  error: "#FF7A7A"
+  background-start: "#08090A"
+  background-end: "#1A1B1E"
+  border-start: "#2A2B2F"
+  border-end: "#5A5C63"
+title:
+  gradient: [primary, secondary]
+border:
+  style: striped
+  material: GRAY_STAINED_GLASS_PANE
+  resource-pack-material: LEATHER_HORSE_ARMOR
+  resource-pack-model-data: 9001
+  custom-model-data: 9001
+icons:
+  search:
+    material: COMPASS
+    custom-model-data: 9101
+  previous:
+    material: ARROW
+    custom-model-data: 9102
+  next:
+    material: ARROW
+    custom-model-data: 9103
+  page:
+    material: PAPER
+    custom-model-data: 9104
+  category:
+    material: NAME_TAG
+    custom-model-data: 9105
+  close:
+    material: BARRIER
+    custom-model-data: 9106
+  loading:
+    material: CLOCK
+    custom-model-data: 9107
+  error:
+    material: BARRIER
+    custom-model-data: 9108
+sounds:
+  open: block.chest.open
+  click: ui.button.click
+  page: item.book.page_turn
+  error: entity.villager.no
+  success: entity.player.levelup
